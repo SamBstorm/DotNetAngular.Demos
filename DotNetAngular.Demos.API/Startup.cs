@@ -1,3 +1,6 @@
+using DotNetAngular.Demos.DAL.Common.Services;
+using DotNetAngular.Demos.Models;
+using DotNetAngular.Demos.Service;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -24,6 +27,8 @@ namespace DotNetAngular.Demos.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped<IMovieService<Movie, int>,MovieServiceV2>();
+
             services.AddControllers();
         }
 

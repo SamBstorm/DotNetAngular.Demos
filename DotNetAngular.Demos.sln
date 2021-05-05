@@ -5,6 +5,14 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAngular.Demos.API", "DotNetAngular.Demos.API\DotNetAngular.Demos.API.csproj", "{D4DC969B-A3D3-4CF1-AFD9-E264EC0ED7B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAngular.Demos.Models", "DotNetAngular.Demos.Models\DotNetAngular.Demos.Models.csproj", "{0AB526D9-2324-4EC7-9B8C-67CECF441A3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAngular.Demos.DBDatas", "DotNetAngular.Demos.DBDatas\DotNetAngular.Demos.DBDatas.csproj", "{C8A3FA63-4C67-4E63-AC02-8354495D29AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAngular.Demos.Service", "DotNetAngular.Demos.DAL\DotNetAngular.Demos.Service.csproj", "{0DFF6A98-3BE5-452B-862C-FE0E9B496508}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetAngular.Demos.DAL.Common", "DotNetAngular.Demos.DAL.Common\DotNetAngular.Demos.DAL.Common.csproj", "{FD8A946F-60D3-4B84-AB00-09A3AB894C3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{D4DC969B-A3D3-4CF1-AFD9-E264EC0ED7B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4DC969B-A3D3-4CF1-AFD9-E264EC0ED7B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4DC969B-A3D3-4CF1-AFD9-E264EC0ED7B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AB526D9-2324-4EC7-9B8C-67CECF441A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AB526D9-2324-4EC7-9B8C-67CECF441A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AB526D9-2324-4EC7-9B8C-67CECF441A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AB526D9-2324-4EC7-9B8C-67CECF441A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8A3FA63-4C67-4E63-AC02-8354495D29AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8A3FA63-4C67-4E63-AC02-8354495D29AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8A3FA63-4C67-4E63-AC02-8354495D29AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8A3FA63-4C67-4E63-AC02-8354495D29AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DFF6A98-3BE5-452B-862C-FE0E9B496508}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DFF6A98-3BE5-452B-862C-FE0E9B496508}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DFF6A98-3BE5-452B-862C-FE0E9B496508}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DFF6A98-3BE5-452B-862C-FE0E9B496508}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8A946F-60D3-4B84-AB00-09A3AB894C3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8A946F-60D3-4B84-AB00-09A3AB894C3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8A946F-60D3-4B84-AB00-09A3AB894C3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8A946F-60D3-4B84-AB00-09A3AB894C3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

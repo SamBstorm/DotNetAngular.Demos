@@ -9,6 +9,7 @@ namespace DotNetAngular.Demos.API.Controllers
 {
     [ApiController]
     [Route("[controller]")]
+    [Route("v1/WeatherDemo/")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -40,7 +41,10 @@ namespace DotNetAngular.Demos.API.Controllers
 
 
         [HttpGet]
-        [Route("List")]
+        [Route("Listing")]
+        [Route("[action]")]
+        [Route("/[action]/[controller]")]
+        [Route("Weathers")]
         public IEnumerable<WeatherForecast> List()
         {
             var rng = new Random();
@@ -53,9 +57,10 @@ namespace DotNetAngular.Demos.API.Controllers
             .ToArray();
         }
 
-        [HttpGet("{id}")]
-        public WeatherForecast Get(int id)
+        [HttpGet("ChooseOne/{id?}")]
+        public WeatherForecast GetOne(int? id)
         {
+            id ??= 1;
             var rng = new Random();
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
@@ -63,7 +68,15 @@ namespace DotNetAngular.Demos.API.Controllers
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
-            .ToArray()[id];
+            .ToArray()[(int)id];
+        }
+
+        [HttpGet("TestString/MSG={message:int}")]
+        public string GiveMeAString(string message)
+        {
+            if(message.ToLower() == "Toto".ToLower())
+            return message;
+            return "BadWord";
         }
 
         [HttpPost]
